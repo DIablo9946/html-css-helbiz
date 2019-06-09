@@ -1,18 +1,97 @@
+/* Metto le regole per convenzione del browser */
+
 * {
   margin: 0;
   box-sizing: border-box;
   padding: 0;
 }
 
+/* Mi occupo della sezione header */
+
 header {
-  height: 150px;
-  background-color: yellow;
+  height: 60px;
+  background-color: white;
+  position: fixed;
+  width: 100%;
 }
 
+header::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.block {
+  padding-top: 15px;
+  margin-left: 20vw;
+  float: left;
+}
+
+.block li, .block hr {
+  display: inline-block;
+}
+
+.block li {
+  margin: 0 10px;
+}
+
+hr {
+  width: 1;
+  height: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Regola generale per row per far apparire due colonne  */
+
+.row {
+  width: 100%;
+  height: 1000px;
+}
+
+.row::after {
+  content: "";
+  display: table;
+  display: none;
+
+}
+
+/* Mi occupo della section 1 */
+
+
+
+
+/* Mi occupo della section 2 */
+
+.colonne {
+  float: left;
+  width: 35%;
+  height: 600px;
+  margin: 100px;
+  background-color: white;
+}
+
+.colonna1 {
+  margin-left: 260px;
+  margin-right: 20px;
+}
+
+.colonna2 {
+  margin-right: 260px;
+  margin-left: 20px;
+}
+
+
+/* Impostazioni base per vedere se funziona tutto inizialmente  */
+
 section {
-  height: 100px;
+  height: 200px;
   background-color: gray;
   border: solid black 2px;
+  width: 100%;
 }
 
 footer {
